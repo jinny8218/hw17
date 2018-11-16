@@ -1,0 +1,27 @@
+import os
+os.chdir('C://Users//LG//Desktop//work')
+
+name = input('이름? ')
+
+with open("C://Users//LG//Desktop//work//phone.txt") as f:
+    lines = f.readlines()
+
+trial=0
+
+for k in lines:
+    a= list()
+    a = k.split(',')
+
+    while trial <=1:
+
+        if a[0] == name:
+            print(a[0], ":", a[1])
+            trial=trial+1
+            
+        if trial==1:
+            trial=trial+1
+            break
+
+        else:
+            trial=trial+1
+            print(name, "의 연락처가 존재하지 않습니다.")
