@@ -3,7 +3,7 @@ os.chdir('C://Users//LG//Desktop//work')
 
 name = input('이름? ')
 
-with open("C://Users//LG//Desktop//work//phone.txt") as f:
+with open("C://Users//LG//Desktop//work//hithere.txt") as f:
     lines = f.readlines()
 
 trial=0
